@@ -1,8 +1,4 @@
-CREATE DATABASE IF NOT EXISTS llibreria
-    CHARACTER SET utf8mb4
-    COLLATE utf8mb4_unicode_ci;
-
-USE llibreria;
+USE `libreria-m2`;
 
 CREATE TABLE IF NOT EXISTS libros (
     idLlibre INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -10,4 +6,4 @@ CREATE TABLE IF NOT EXISTS libros (
     numPag INT UNSIGNED NOT NULL,
     reu DECIMAL(10,2) UNSIGNED NOT NULL,
     PRIMARY KEY (idLlibre)
-) ENGINE=InnoDB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
