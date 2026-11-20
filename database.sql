@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS llibreria
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE llibreria;
+
+CREATE TABLE IF NOT EXISTS libros (
+    idLlibre INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    titol VARCHAR(255) NOT NULL,
+    numPag INT UNSIGNED NOT NULL,
+    reu DECIMAL(10,2) UNSIGNED NOT NULL,
+    PRIMARY KEY (idLlibre)
+) ENGINE=InnoDB;

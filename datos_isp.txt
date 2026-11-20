@@ -1,0 +1,6 @@
+Host:
+Usuario:
+Clave:
+Base de datos: llibreria
+Tabla: libros
+Campos: idLlibre, titol, numPag, reu
