@@ -1,13 +1,8 @@
 <?php
-$host = getenv('DB_HOST') ?: 'localhost';
-$usuario = getenv('DB_USER');
-$clave = getenv('DB_PASSWORD');
-$baseDeDatos = getenv('DB_NAME');
-
-if ($usuario === false || $clave === false || $baseDeDatos === false) {
-    http_response_code(500);
-    exit('Faltan las variables de entorno DB_USER, DB_PASSWORD o DB_NAME.');
-}
+$host = 'localhost';
+$usuario = 'mylibreriacb';
+$clave = '@Examen-modulo-2';
+$baseDeDatos = 'libreria-m2';
 
 $conexion = mysqli_connect($host, $usuario, $clave, $baseDeDatos);
 
